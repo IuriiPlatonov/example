@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SessionConfig>
+	<properties>
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="connectionString" value="jdbc:oracle:thin:@10.100.22.9:1521:HPDOILDV"/>
+		<property name="user" value="ADMIN"/>
+		<property name="password" value="admin"/>
+	</properties>
+
+	<mapping id="ExampleTask.TreeDocCard">
+		<class name="com.otoil.ot_1_1_1.server.entities.treedoccard.TreeDocCard"/>
+		<entity name="com/otoil/ot_1_1_1/server/entities/treedoccard/TreeDocCard.entity"/>
+		<view name="com/otoil/ot_1_1_1/server/entities/treedoccard/DocCard.view"/>
+	</mapping>
+
+
+
+	<mapping id="ExampleTask.ObjectAttribute">
+		<class name="com.otoil.ot_1_1_1.server.entities.objectattribute.ObjectAttribute"/>
+		<entity name="com/otoil/ot_1_1_1/server/entities/objectattribute/ObjectAttribute.entity"/>
+		<view name="com/otoil/ot_1_1_1/server/entities/objectattribute/ObjectAttribute.view"/>
+	</mapping>
+
+
+	<mapping id="ExampleTask.DocCard">
+		<class name="com.otoil.ot_1_1_1.server.entities.documentcard.DocCard"/>
+		<entity name="com/otoil/ot_1_1_1/server/entities/documentcard/DocCard.entity"/>
+		<view name="com/otoil/ot_1_1_1/server/entities/documentcard/DocCard.view"/>
+	</mapping>
+
+</SessionConfig>

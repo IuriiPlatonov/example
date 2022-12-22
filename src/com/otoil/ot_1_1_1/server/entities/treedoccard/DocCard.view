@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<query>
+	<select><![CDATA[
+with DOC_TREE as (
+select
+	dc.DCMCRD_ID,
+	dc.NAME,
+	dc.ORDER_NUMBER,
+	dc.CHANGE_DATE,
+	dc.DCMCRD_DCMCRD_ID,
+	DCCRDKND_DCCRDKND_ID
+from
+	DOCUMENT_CARDS dc
+	connect by prior DCMCRD_ID = DCMCRD_DCMCRD_ID	
+	start with dc.DCMCRD_ID in (
+	select
+		DCMCRD_ID
+	from
+		DOCUMENT_CARDS
+	where
+		DCMCRD_DCMCRD_ID is null
+		and ROWNUM <= 10)
+)
+select
+	DCMCRD_ID,
+	dt.NAME,
+	dt.ORDER_NUMBER,
+	dt.CHANGE_DATE,
+	dt.DCMCRD_DCMCRD_ID,
+	COALESCE(
+		(select
+			dcf.ICON
+		from
+			DOCUMENT_CONTENTS dc2
+		join DOC_CONTENT_FORMATS dcf ON dc2.DOCCNTFRMT_DOCCNTFRMT_ID = dcf.DOCCNTFRMT_ID 
+		where
+			dt.DCMCRD_ID = dc2.DCMCRD_DCMCRD_ID AND dc2.order_number = 0),
+		(SELECT 
+			dck.ICON
+		from
+			 DOC_CARD_KINDS dck
+		where DCCRDKND_ID = dt.DCCRDKND_DCCRDKND_ID )
+	) as ICON
+from
+	DOC_TREE dt
+
+	]]></select>
+	<order-by></order-by>
+</query>

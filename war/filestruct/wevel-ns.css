@@ -1,0 +1,20 @@
+body, input, textarea, table, td {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #333;
+}
+
+tr.rowCellsHide>td {
+	display: none;
+}
+
+tr.rowFullHide {
+	display: none;
+}
+
+.disable-select {
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
+}

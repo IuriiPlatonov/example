@@ -1,0 +1,57 @@
+.masterPanel {
+	margin: 40px 20px 70px;
+}
+
+
+.horizontalPanel {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+}
+
+.treetable {
+	color:black;
+	background-color: #00376f;
+}
+
+.title {
+	top: 3em;
+	left: 40px;
+	font-size: 2em;
+	font-weight: bold;
+	color: #0080ff;
+	margin: 40px 20% 70px;
+}
+
+.table {
+	color: white;
+}
+
+.detailsTable {
+	position: sticky;
+	top: 0;
+}
+
+.firstColumn {
+	background-color: #00376f;
+}
+
+.secondColumn {
+	background-color: #0057ae;
+}
+
+.thirdColumn {
+	background-color: #0080ff;
+}
+
+.fourthColumn {
+	background-color: #93c9ff;
+}
+
+.firstDetailColumn {
+	background-color: #0080ff;
+}
+
+.secondDetailColumn {
+	background-color: #79bcff;
+}

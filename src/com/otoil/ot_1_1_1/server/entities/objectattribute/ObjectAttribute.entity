@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<class-mapping>
+	<class name="com.otoil.ot_1_1_1.server.entities.objectattribute.ObjectAttribute">
+		<id name="name" type="java.lang.String" column="NAME"/>
+		<id name="valueString" type="java.lang.String" column="VALUE_STRING"/>
+
+		<insert>
+			<sql clause=""></sql>
+		</insert>
+
+		<update>
+			<sql clause=""></sql>
+		</update>
+
+		<delete>
+			<sql clause=""></sql>
+		</delete>
+
+	</class>
+</class-mapping>

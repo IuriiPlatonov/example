@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<servlet>
+		<servlet-name>restServlet</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>jersey.config.server.provider.packages</param-name>
+			<param-value>
+			com.otoil.ot_1_1_1.server 
+			ru.ot.gwt.sdo.server.rest 
+ 			ru.ot.gwt.utils.server.service 
+			</param-value>
+		</init-param>
+		<!-- <init-param> <param-name>jersey.config.server.provider.classnames</param-name> 
+			<param-value>org.glassfish.jersey.media.multipart.MultiPartFeature</param-value> 
+			</init-param> -->
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>restServlet</servlet-name>
+		<url-pattern>/exampletask/rest/*</url-pattern>
+	</servlet-mapping>
+	
+ 	<servlet>
+		<servlet-name>exception</servlet-name>
+		<servlet-class>ru.ot.gwt.exception.server.ExceptionServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>exception</servlet-name>
+		<url-pattern>/exampletask/exception</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>ExampleTask.html</welcome-file>
+	</welcome-file-list>
+
+
+</web-app>
