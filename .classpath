@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.gwtplugins.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/RXJAVA"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GDAL"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GUAVA"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ORACLE_JDBC"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/REST"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SLF4J"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SOLR"/>
+	<classpathentry kind="src" path="/WeVEL-NS"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-Binding"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-Core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-Exception"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/LOMBOK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-Utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-Extention"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BindingsEx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Bindings"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-SDO"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SDO"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GWT-MVP"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
